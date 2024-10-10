@@ -1,0 +1,91 @@
+
+
+
+.form{
+    background-color: #e91f1f;
+    width: fit-content;
+    min-height: 80vh;
+    
+    border: 2px solid rgb(20, 228, 31);
+    box-shadow: 4px -12px 10px #cf8787;
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 20rem;
+    border-radius: 2rem;
+    border-top: 10px #33ace4;
+    border-bottom: 10px #33ace4;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes pumpin{
+    0% {
+        transform: scaleX(1) translate(100px);
+    }
+    50%{
+        transform: scaleX(1.5) translate(200px);
+    }
+    100%{
+        transform: scaleX(1) translate(300px);
+    }
+}
+
+label{
+    font-size: 1rem;
+    color:rgb(255, 255, 255);
+    margin-right: 2rem;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #35e8f5;
+    
+}
+h1{
+    font-size: 0.3rem;
+    color: #ffffff;
+    animation: pop-in 3000ms;
+}
+@keyframes pop-in{
+    from{
+        transform: translateX(-2000px);
+    }
+    to{
+        transform: translateX(40px);
+    }
+}
+input,textarea{
+    font-size: 1rem;
+    height: 2rem;
+    min-width: 3rem;
+    margin-left: 2rem;
+    border-radius: 0.2rem;
+    border: 2px solid #e1e287;
+    padding: 0 10px;
+   
+   
+}
+ 
+button{
+    width: fit-content;
+    margin-top: 3rem;
+
+    animation-iteration-count: infinite;
+}
+
+.btnsend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    background-color: rgb(47, 252, 252);
+    color: black;
+}
+button:active{
+    transform: translateY(0.2rem);
+}

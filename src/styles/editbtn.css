@@ -1,0 +1,23 @@
+.editbutton{
+    color: blue;
+    background-color: #f0d642;
+   
+}
+.editbutton:active{
+    animation: shiver 1000ms;
+}
+@keyframes shiver{
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(20px) ;
+    }
+}
+
+.edit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

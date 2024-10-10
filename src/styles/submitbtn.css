@@ -1,0 +1,26 @@
+.submitbutton{
+    background-color: orange;
+    width: fit-content;
+    color: #fff;
+    box-shadow: 4px -15px 5px #57564b;
+    
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.submitbutton:active{
+    animation:shiver 1000ms ease-in;
+}
+
+ @keyframes shiver{
+    from {
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(15px);
+    }
+ }
